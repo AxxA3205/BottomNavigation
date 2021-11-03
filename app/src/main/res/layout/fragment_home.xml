@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/information_bg">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kemana Anda akan pergi?"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Pilihan destinasi yang kami sediakan"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/back" />
+
+    <HorizontalScrollView
+        android:layout_width="416dp"
+        android:layout_height="566dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="118dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/wisata1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pantai" />
+
+            <ImageButton
+                android:id="@+id/wisata2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toEndOf="@+id/wisata1"
+                app:layout_constraintTop_toTopOf="@+id/wisata1"
+                app:srcCompat="@drawable/pasir" />
+
+            <ImageButton
+                android:id="@+id/wisata3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toEndOf="@+id/wisata2"
+                app:layout_constraintTop_toTopOf="@+id/wisata2"
+                app:srcCompat="@drawable/tebing" />
+
+            <ImageButton
+                android:id="@+id/wisatabutton1"
+                android:layout_width="248dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="420dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pantai_button" />
+
+            <ImageButton
+                android:id="@+id/wisatabutton2"
+                android:layout_width="248dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/pasir_button"
+                app:layout_constraintStart_toEndOf="@id/wisatabutton1"
+                app:layout_constraintTop_toTopOf="@id/wisatabutton1" />
+
+            <ImageButton
+                android:id="@+id/wisatabutton3"
+                android:layout_width="248dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                app:srcCompat="@drawable/tebing_button"
+                app:layout_constraintStart_toEndOf="@id/wisatabutton2"
+                app:layout_constraintTop_toTopOf="@id/wisatabutton2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
